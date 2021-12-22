@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_picking_type_form" model="ir.ui.view">
+        <field name="name">Operation Types Inherit 3MIT</field>
+        <field name="model">stock.picking.type</field>
+        <field name="inherit_id" ref="stock.view_picking_type_form"/>
+        <field name="arch" type="xml">
+            <sheet position="inside">
+                <notebook>
+                    <page name="pickings" string="Movement types">
+                        <field name="mit_movement_type_ids" context="{'default_picking_type_id': active_id, 'form_view_ref': '3mit_stock.3mit_view_picking_form', 'tree_view_ref': '3mit_stock.3mit_vpicktree'}"/>
+                    </page>
+                </notebook>
+            </sheet>
+        </field>
+    </record>
+    <record id="view_picking_form" model="ir.ui.view">
+        <field name="name">stock.picking.form.inherit.3mit</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <form position="attributes">
+                <attribute name="create">0</attribute>
+            </form>
+            <field name="origin" position="after">
+                <field name="movement_type_id" attrs="{'readonly': [('state', 'in', ('assigned', 'done', 'cancel'))]}"/>
+            </field>
+        </field>
+    </record>
+    <record id="3mit_view_picking_form" model="ir.ui.view">
+        <field name="name">stock.picking.form.inherit.3mit</field>
+        <field name="model">stock.picking</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <field name="movement_type_id" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+        </field>
+    </record>
+    <record id="vpicktree" model="ir.ui.view">
+        <field name="name">stock.picking.tree.inherit.3mit</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.vpicktree"/>
+        <field name="arch" type="xml">
+            <tree position="attributes">
+                <attribute name="create">0</attribute>
+                <attribute name="edit">0</attribute>
+            </tree>
+            <field name="picking_type_id" position="after">
+                <field name="movement_type_id" optional="show" />
+            </field>
+        </field>
+    </record>
+    <record id="3mit_vpicktree" model="ir.ui.view">
+        <field name="name">stock.picking.tree</field>
+        <field name="model">stock.picking</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="stock.vpicktree"/>
+        <field name="arch" type="xml">
+            <tree position="attributes">
+                <attribute name="create">1</attribute>
+            </tree>
+            <field name="priority" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+        </field>
+    </record>
+</odoo>

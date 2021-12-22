@@ -1,0 +1,55 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* 3mit_stock
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-21 07:05+0000\n"
+"PO-Revision-Date: 2021-12-21 07:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: 3mit_stock
+#: model:ir.model.fields,field_description:3mit_stock.field_stock_picking__display_name
+#: model:ir.model.fields,field_description:3mit_stock.field_stock_picking_type__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: 3mit_stock
+#: model:ir.model.fields,field_description:3mit_stock.field_stock_picking__id
+#: model:ir.model.fields,field_description:3mit_stock.field_stock_picking_type__id
+msgid "ID"
+msgstr ""
+
+#. module: 3mit_stock
+#: model:ir.model.fields,field_description:3mit_stock.field_stock_picking____last_update
+#: model:ir.model.fields,field_description:3mit_stock.field_stock_picking_type____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: 3mit_stock
+#: model:ir.model.fields,field_description:3mit_stock.field_stock_picking__movement_type_id
+msgid "Movement Type"
+msgstr ""
+
+#. module: 3mit_stock
+#: model:ir.model.fields,field_description:3mit_stock.field_stock_picking_type__mit_movement_type_ids
+#: model_terms:ir.ui.view,arch_db:3mit_stock.view_picking_type_form
+msgid "Movement types"
+msgstr ""
+
+#. module: 3mit_stock
+#: model:ir.model,name:3mit_stock.model_stock_picking_type
+msgid "Picking Type"
+msgstr ""
+
+#. module: 3mit_stock
+#: model:ir.model,name:3mit_stock.model_stock_picking
+msgid "Transfer"
+msgstr ""

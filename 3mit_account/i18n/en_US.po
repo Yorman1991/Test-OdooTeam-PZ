@@ -1,0 +1,103 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* 3mit_account
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-22 06:22+0000\n"
+"PO-Revision-Date: 2021-12-22 06:22+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: 3mit_account
+#: code:addons/3mit_account/models/account_move.py:0
+#, python-format
+msgid "'%s' and '%s' should share the same %s."
+msgstr ""
+
+#. module: 3mit_account
+#: code:addons/3mit_account/models/account_move.py:0
+#, python-format
+msgid "'%s' and '%s' should share the same products or at least one."
+msgstr ""
+
+#. module: 3mit_account
+#: code:addons/3mit_account/models/account_move.py:0
+#, python-format
+msgid "'%s' cannot have more quantities of the same product, '%s', than '%s'."
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model,name:3mit_account.model_account_move_reversal
+msgid "Account Move Reversal"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_account_bank_statement_line__associated_credit_note_id
+#: model:ir.model.fields,field_description:3mit_account.field_account_move__associated_credit_note_id
+#: model:ir.model.fields,field_description:3mit_account.field_account_payment__associated_credit_note_id
+msgid "Associated Reverse Move"
+msgstr ""
+
+#. module: 3mit_account
+#: model_terms:ir.ui.view,arch_db:3mit_account.view_move_form
+msgid "Bill"
+msgstr ""
+
+#. module: 3mit_account
+#: model_terms:ir.ui.view,arch_db:3mit_account.view_move_form
+msgid "Credit Note"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_account_bank_statement_line__is_credit_note_issued
+#: model:ir.model.fields,field_description:3mit_account.field_account_move__is_credit_note_issued
+#: model:ir.model.fields,field_description:3mit_account.field_account_payment__is_credit_note_issued
+msgid "Credit Note Issued"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_account_move__display_name
+#: model:ir.model.fields,field_description:3mit_account.field_account_move_reversal__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_account_move__id
+#: model:ir.model.fields,field_description:3mit_account.field_account_move_reversal__id
+msgid "ID"
+msgstr ""
+
+#. module: 3mit_account
+#: model_terms:ir.ui.view,arch_db:3mit_account.view_move_form
+msgid "Invoice"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model,name:3mit_account.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_account_move____last_update
+#: model:ir.model.fields,field_description:3mit_account.field_account_move_reversal____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: 3mit_account
+#: model_terms:ir.ui.view,arch_db:3mit_account.view_move_form
+msgid "Refund"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_account_bank_statement_line__reverse_move_type
+#: model:ir.model.fields,field_description:3mit_account.field_account_move__reverse_move_type
+#: model:ir.model.fields,field_description:3mit_account.field_account_payment__reverse_move_type
+msgid "Reverse Move Type"
+msgstr ""
