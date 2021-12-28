@@ -4,7 +4,6 @@
 from odoo import api, models, fields, _
 
 
-
 class MitReportAccountAgedPartner(models.AbstractModel):
     _name = 'mit.account.aged.partner'
     _inherit = "account.aged.partner"
