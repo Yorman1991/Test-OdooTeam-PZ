@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="account.account.type" id="account_type_credit_note">
+        <field name="name">Payable credit note</field>
+        <field name="type">payable</field>
+        <field name="internal_group">liability</field>
+        <field name="include_initial_balance" eval="True"/>
+    </record>
+</odoo>

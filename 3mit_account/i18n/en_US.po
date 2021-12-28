@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-22 06:22+0000\n"
-"PO-Revision-Date: 2021-12-22 06:22+0000\n"
+"POT-Creation-Date: 2021-12-27 12:21+0000\n"
+"PO-Revision-Date: 2021-12-27 12:21+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -34,8 +34,78 @@ msgid "'%s' cannot have more quantities of the same product, '%s', than '%s'."
 msgstr ""
 
 #. module: 3mit_account
-#: model:ir.model,name:3mit_account.model_account_move_reversal
-msgid "Account Move Reversal"
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__period1
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__period1
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__period1
+msgid "1 - 30"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__period2
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__period2
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__period2
+msgid "31 - 60"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__period3
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__period3
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__period3
+msgid "61 - 90"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__period4
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__period4
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__period4
+msgid "91 - 120"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__account_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__account_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__account_id
+msgid "Account"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__account_code
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__account_code
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__account_code
+msgid "Account Code"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__account_name
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__account_name
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__account_name
+msgid "Account Name"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model,name:3mit_account.model_mit_account_aged_payable
+msgid "Aged Payable"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__analytic_account_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__analytic_account_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__analytic_account_id
+msgid "Analytic Account"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__analytic_tag_ids
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__analytic_tag_ids
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__analytic_tag_ids
+msgid "Analytic Tag"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__period0
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__period0
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__period0
+msgid "As of: "
 msgstr ""
 
 #. module: 3mit_account
@@ -46,8 +116,29 @@ msgid "Associated Reverse Move"
 msgstr ""
 
 #. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__balance
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__balance
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__balance
+msgid "Balance"
+msgstr ""
+
+#. module: 3mit_account
 #: model_terms:ir.ui.view,arch_db:3mit_account.view_move_form
 msgid "Bill"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__company_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__company_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__company_id
+msgid "Company"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__credit
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__credit
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__credit
+msgid "Credit"
 msgstr ""
 
 #. module: 3mit_account
@@ -63,14 +154,53 @@ msgid "Credit Note Issued"
 msgstr ""
 
 #. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__currency_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__currency_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__date
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__date
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__date
+msgid "Date"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__debit
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__debit
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__debit
+msgid "Debit"
+msgstr ""
+
+#. module: 3mit_account
 #: model:ir.model.fields,field_description:3mit_account.field_account_move__display_name
-#: model:ir.model.fields,field_description:3mit_account.field_account_move_reversal__display_name
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__display_name
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__display_name
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__display_name
 msgid "Display Name"
 msgstr ""
 
 #. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__display_type
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__display_type
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__display_type
+msgid "Display Type"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__expected_pay_date
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__expected_pay_date
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__expected_pay_date
+msgid "Exp. Date"
+msgstr ""
+
+#. module: 3mit_account
 #: model:ir.model.fields,field_description:3mit_account.field_account_move__id
-#: model:ir.model.fields,field_description:3mit_account.field_account_move_reversal__id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__id
 msgid "ID"
 msgstr ""
 
@@ -80,14 +210,105 @@ msgid "Invoice"
 msgstr ""
 
 #. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__journal_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__journal_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__journal_id
+msgid "Journal"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__journal_code
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__journal_code
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__journal_code
+msgid "Journal Code"
+msgstr ""
+
+#. module: 3mit_account
 #: model:ir.model,name:3mit_account.model_account_move
 msgid "Journal Entry"
 msgstr ""
 
 #. module: 3mit_account
 #: model:ir.model.fields,field_description:3mit_account.field_account_move____last_update
-#: model:ir.model.fields,field_description:3mit_account.field_account_move_reversal____last_update
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner____last_update
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable____last_update
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note____last_update
 msgid "Last Modified on"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__move_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__move_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__move_id
+msgid "Move"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__move_name
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__move_name
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__move_name
+msgid "Move Name"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__move_type
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__move_type
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__move_type
+msgid "Move Type"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__name
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__name
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__name
+msgid "Name"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__period5
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__period5
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__period5
+msgid "Older"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__partner_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__partner_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__partner_id
+msgid "Partner"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__partner_name
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__partner_name
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__partner_name
+msgid "Partner Name"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__partner_trust
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__partner_trust
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__partner_trust
+msgid "Partner Trust"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.actions.client,name:3mit_account.action_account_report_pcn
+#: model:ir.model,name:3mit_account.model_mit_account_aged_payable_credit_note
+#: model:ir.ui.menu,name:3mit_account.menu_action_account_report_payable_credit_note
+msgid "Payable Credit Note"
+msgstr ""
+
+#. module: 3mit_account
+#: model:account.account.type,name:3mit_account.account_type_credit_note
+msgid "Payable credit note"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__payment_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__payment_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__payment_id
+msgid "Payment"
 msgstr ""
 
 #. module: 3mit_account
@@ -96,8 +317,27 @@ msgid "Refund"
 msgstr ""
 
 #. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__report_currency_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__report_currency_id
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__report_currency_id
+msgid "Report Currency"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_partner__report_date
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable__report_date
+#: model:ir.model.fields,field_description:3mit_account.field_mit_account_aged_payable_credit_note__report_date
+msgid "Report Date"
+msgstr ""
+
+#. module: 3mit_account
 #: model:ir.model.fields,field_description:3mit_account.field_account_bank_statement_line__reverse_move_type
 #: model:ir.model.fields,field_description:3mit_account.field_account_move__reverse_move_type
 #: model:ir.model.fields,field_description:3mit_account.field_account_payment__reverse_move_type
 msgid "Reverse Move Type"
+msgstr ""
+
+#. module: 3mit_account
+#: model:ir.model,name:3mit_account.model_mit_account_aged_partner
+msgid "mit.account.aged.partner"
 msgstr ""

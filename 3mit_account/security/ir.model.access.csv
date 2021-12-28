@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mit_account_aged_payable,access_mit_account_aged_payable,model_mit_account_aged_payable,base.group_user,1,0,0,0
+access_mit_account_payable_credit_note,access_mit_account_payable_credit_note,model_mit_account_aged_payable_credit_note,base.group_user,1,0,0,0

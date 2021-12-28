@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-21 07:06+0000\n"
-"PO-Revision-Date: 2021-12-21 07:06+0000\n"
+"POT-Creation-Date: 2021-12-28 10:55+0000\n"
+"PO-Revision-Date: 2021-12-28 10:55+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,38 +16,88 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: 3mit_stock
+#: model:ir.model.fields,field_description:3mit_stock.field_mit_stock_picking_tag__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: 3mit_stock
+#: model:ir.model.fields,field_description:3mit_stock.field_mit_stock_picking_tag__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: 3mit_stock
+#: model:ir.model.fields,field_description:3mit_stock.field_mit_stock_picking_tag__display_name
+#: model:ir.model.fields,field_description:3mit_stock.field_stock_move_line__display_name
 #: model:ir.model.fields,field_description:3mit_stock.field_stock_picking__display_name
 #: model:ir.model.fields,field_description:3mit_stock.field_stock_picking_type__display_name
 msgid "Display Name"
 msgstr "Nombre mostrado"
 
 #. module: 3mit_stock
+#: model:ir.model.fields,field_description:3mit_stock.field_mit_stock_picking_tag__id
+#: model:ir.model.fields,field_description:3mit_stock.field_stock_move_line__id
 #: model:ir.model.fields,field_description:3mit_stock.field_stock_picking__id
 #: model:ir.model.fields,field_description:3mit_stock.field_stock_picking_type__id
 msgid "ID"
 msgstr ""
 
 #. module: 3mit_stock
+#: model:ir.model.fields,field_description:3mit_stock.field_mit_stock_picking_tag____last_update
+#: model:ir.model.fields,field_description:3mit_stock.field_stock_move_line____last_update
 #: model:ir.model.fields,field_description:3mit_stock.field_stock_picking____last_update
 #: model:ir.model.fields,field_description:3mit_stock.field_stock_picking_type____last_update
 msgid "Last Modified on"
 msgstr "Última modificación el"
 
 #. module: 3mit_stock
-#: model:ir.model.fields,field_description:3mit_stock.field_stock_picking__movement_type_id
-msgid "Movement Type"
-msgstr "Tipo de movimiento"
+#: model:ir.model.fields,field_description:3mit_stock.field_mit_stock_picking_tag__write_uid
+msgid "Last Updated by"
+msgstr ""
 
 #. module: 3mit_stock
-#: model:ir.model.fields,field_description:3mit_stock.field_stock_picking_type__mit_movement_type_ids
+#: model:ir.model.fields,field_description:3mit_stock.field_mit_stock_picking_tag__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: 3mit_stock
+#: model:ir.model.fields,field_description:3mit_stock.field_stock_move_line__mit_tag_id
+#: model:ir.model.fields,field_description:3mit_stock.field_stock_picking__mit_tag_id
+msgid "Movement Type"
+msgstr "Tipo de Movimiento"
+
+#. module: 3mit_stock
+#: model:ir.model,name:3mit_stock.model_mit_stock_picking_tag
+#: model:ir.model.fields,field_description:3mit_stock.field_stock_picking_type__mit_tag_ids
+#: model_terms:ir.ui.view,arch_db:3mit_stock.view_mit_stock_picking_tag_form
 #: model_terms:ir.ui.view,arch_db:3mit_stock.view_picking_type_form
-msgid "Movement types"
-msgstr "Tipos de movimiento"
+msgid "Movement Types"
+msgstr "Tipos de Movimiento"
+
+#. module: 3mit_stock
+#: model:ir.model.fields,field_description:3mit_stock.field_mit_stock_picking_tag__name
+msgid "Name"
+msgstr ""
+
+#. module: 3mit_stock
+#: model:ir.model.fields,field_description:3mit_stock.field_mit_stock_picking_tag__picking_type_id
+msgid "Operation Types"
+msgstr ""
 
 #. module: 3mit_stock
 #: model:ir.model,name:3mit_stock.model_stock_picking_type
 msgid "Picking Type"
 msgstr "Tipo de albarán"
+
+#. module: 3mit_stock
+#: model:ir.model.fields,field_description:3mit_stock.field_mit_stock_picking_tag__picking_ids
+#: model_terms:ir.ui.view,arch_db:3mit_stock.view_mit_stock_picking_tag_form
+msgid "Pickings"
+msgstr ""
+
+#. module: 3mit_stock
+#: model:ir.model,name:3mit_stock.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "Movimientos de Producto (Stock Move Line)"
 
 #. module: 3mit_stock
 #: model:ir.model,name:3mit_stock.model_stock_picking

@@ -2,22 +2,21 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     #  Information
-    'name': '3MIT Stock Extension',
+    'name': '3MIT Pricelist Extension',
     'version': '14.0.1.0.0',
-    'summary': 'Add mapping between picking and its type.',
+    'summary': 'Add chatter for Pricelist.',
     'description': """
 """,
-    'category': 'Customization/stock',
+    'category': 'Customization/product',
 
     # Author
     'author': 'Odoo',
     'website': 'https://www.odoo.com/',
 
     # Dependency
-    'depends': ['stock'],
+    'depends': ['product'],
     'data': [
-        'security/ir.model.access.csv',
-        'views/stock_views.xml',
+        'views/product_pricelist_views.xml',
     ],
 
     # Other
@@ -25,3 +24,5 @@
 
     'license': 'LGPL-3',
 }
+
+

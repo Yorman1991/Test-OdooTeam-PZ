@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mit_stock_picking_tag_all,stock.picking.tag all users,model_mit_stock_picking_tag,base.group_user,1,0,0,0
+access_mit_stock_picking_tag_user,stock.picking.tag user,model_mit_stock_picking_tag,stock.group_stock_user,1,0,0,0
+access_mit_stock_picking_tag_manager,stock.picking.tag manager,model_mit_stock_picking_tag,stock.group_stock_manager,1,1,1,1

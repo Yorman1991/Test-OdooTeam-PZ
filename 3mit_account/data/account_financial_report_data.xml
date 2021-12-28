@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_reports.action_account_report_ap" model="ir.actions.client">
+        <field name="context" eval="{'model': 'mit.account.aged.payable'}" />
+    </record>
+    <record id="action_account_report_pcn" model="ir.actions.client">
+        <field name="name">Payable Credit Note</field>
+        <field name="tag">account_report</field>
+        <field name="context" eval="{'model': 'mit.account.aged.payable.credit.note'}"/>
+    </record>
+    <menuitem
+        id="menu_action_account_report_payable_credit_note"
+        name="Payable Credit Note" action="action_account_report_pcn"
+        parent="account_reports.account_reports_partners_reports_menu"/>
+</odoo>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_mit_stock_picking_tag_form" model="ir.ui.view">
+        <field name="name">mit.stock.picking.tag.form</field>
+        <field name="model">mit.stock.picking.tag</field>
+        <field name="arch" type="xml">
+            <form string="Movement Types">
+                <sheet>
+                    <div class="oe_title">
+                        <h1 class="mt0">
+                            <field name="name"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="picking_type_id"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page id="pickings_tab" string="Pickings">
+                            <field name="picking_ids" readonly="1"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_picking_type_form" model="ir.ui.view">
+        <field name="name">stock.picking.type.form.inherit.3mit.stock</field>
+        <field name="model">stock.picking.type</field>
+        <field name="inherit_id" ref="stock.view_picking_type_form"/>
+        <field name="arch" type="xml">
+            <sheet position="inside">
+                <notebook>
+                    <page name="tags" string="Movement Types">
+                        <field name="mit_tag_ids" context="{'default_picking_type_id': active_id}">
+                            <tree editable="bottom">
+                                <field name="name"/>
+                                <field name="picking_type_id" optional="hide"/>
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+            </sheet>
+        </field>
+    </record>
+    <record id="vpicktree" model="ir.ui.view">
+        <field name="name">stock.picking.tree.inherit.3mit.stock</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.vpicktree"/>
+        <field name="arch" type="xml">
+            <field name="picking_type_id" position="after">
+                <field name="mit_tag_id" optional="show"/>
+            </field>
+        </field>
+    </record>
+    <record id="view_picking_form" model="ir.ui.view">
+        <field name="name">stock.picking.form.inherit.3mit.stock</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <field name="origin" position="after">
+                <field name="mit_tag_id"
+                    attrs="{
+                        'readonly': [('state', 'in', ('assigned', 'done', 'cancel'))],
+                        'required': [('state', 'not in', ('assigned', 'done', 'cancel'))]
+                    }" context="{'default_picking_type_id': picking_type_id}"
+                    domain="[('picking_type_id', '=', picking_type_id)]"/>
+            </field>
+        </field>
+    </record>
+    <record id="view_move_line_tree" model="ir.ui.view">
+        <field name="name">stock.move.line.tree.inherit.3mit.stock</field>
+        <field name="model">stock.move.line</field>
+        <field name="inherit_id" ref="stock.view_move_line_tree"/>
+        <field name="arch" type="xml">
+            <field name="reference" position="after">
+                <field name="mit_tag_id"/>
+            </field>
+        </field>
+    </record>
+    <record id="view_move_line_form" model="ir.ui.view">
+        <field name="name">stock.move.line.form.inherit.3mit.stock</field>
+        <field name="model">stock.move.line</field>
+        <field name="inherit_id" ref="stock.view_move_line_form"/>
+        <field name="arch" type="xml">
+            <field name="reference" position="before">
+                <field name="mit_tag_id" required="1" readonly="1"/>
+            </field>
+        </field>
+    </record>
+</odoo>
