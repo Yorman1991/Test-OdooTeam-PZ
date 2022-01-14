@@ -14,6 +14,7 @@
                     <group>
                         <group>
                             <field name="picking_type_id"/>
+                            <field name="active" widget="boolean_toggle"/>
                         </group>
                     </group>
                     <notebook>
@@ -34,9 +35,10 @@
                 <notebook>
                     <page name="tags" string="Movement Types">
                         <field name="mit_tag_ids" context="{'default_picking_type_id': active_id}">
-                            <tree editable="bottom">
+                            <tree editable="bottom" decoration-muted="active == False">
                                 <field name="name"/>
-                                <field name="picking_type_id" optional="hide"/>
+                                <field name="picking_type_id" invisible="1"/>
+                                <field name="active" widget="boolean_toggle"/>
                             </tree>
                         </field>
                     </page>
@@ -65,7 +67,8 @@
                         'readonly': [('state', 'in', ('assigned', 'done', 'cancel'))],
                         'required': [('state', 'not in', ('assigned', 'done', 'cancel'))]
                     }" context="{'default_picking_type_id': picking_type_id}"
-                    domain="[('picking_type_id', '=', picking_type_id)]"/>
+                    domain="[('picking_type_id', '=', picking_type_id)]"
+                    options="{'no_create': True, 'no_create_edit': True, 'no_open': True}"/>
             </field>
         </field>
     </record>

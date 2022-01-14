@@ -13,6 +13,7 @@ class StockPickingTags(models.Model):
         'stock.picking.type', string="Operation Types")
     picking_ids = fields.One2many(
         'stock.picking', 'mit_tag_id', string='Pickings')
+    active = fields.Boolean(default=True)
 
 
 class PickingType(models.Model):
@@ -20,14 +21,15 @@ class PickingType(models.Model):
 
     mit_tag_ids = fields.One2many(
         'mit.stock.picking.tag', 'picking_type_id',
-        string='Movement Types')
+        string='Movement Types', context={'active_test': False})
 
 
 class Picking(models.Model):
     _inherit = "stock.picking"
 
     mit_tag_id = fields.Many2one(
-        'mit.stock.picking.tag', string="Movement Type", tracking=True)
+        'mit.stock.picking.tag', string="Movement Type",
+        tracking=True, ondelete="restrict")
 
 
 class StockMove(models.Model):
@@ -36,4 +38,4 @@ class StockMove(models.Model):
     mit_tag_id = fields.Many2one(
         'mit.stock.picking.tag',
         related="picking_id.mit_tag_id",
-        string="Movement Type")
+        string="Movement Type", store=True)
